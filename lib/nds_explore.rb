@@ -13,5 +13,6 @@ def print_first_directors_movie_titles
   i = 0
   while i < nds[0][:movies].length do
     print nds[0][:movies][i][:title]
+    i += 1
   end
 end
