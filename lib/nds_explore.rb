@@ -16,6 +16,6 @@ def print_first_directors_movie_titles
     arr << nds[0][:movies][i][:title]
     i += 1
   end
-  string = arr.join(\n)
+  string = arr.join("\n")
   print string
 end
