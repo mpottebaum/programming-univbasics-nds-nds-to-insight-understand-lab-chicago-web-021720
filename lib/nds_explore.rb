@@ -9,8 +9,9 @@ def pretty_print_nds(nds)
   pp nds
 end
 
-pretty_print_nds(nested)
-
 def print_first_directors_movie_titles
-  
+  i = 0
+  while i < nested[0][:movies].length do
+    print nested[0][:movies][i][:title]
+  end
 end
