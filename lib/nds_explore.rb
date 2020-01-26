@@ -11,10 +11,10 @@ end
 def print_first_directors_movie_titles
   nds = directors_database
   i = 0
-  arr = []
+  string = ""
   while i < nds[0][:movies].length do
-    arr << nds[0][:movies][i][:title]
+    string = string + "#{nds[0][:movies][i][:title]}\n"
     i += 1
   end
-  arr.join("\n")
+  string
 end
