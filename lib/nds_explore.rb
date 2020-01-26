@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 require 'pp'
 # Call the method directors_database to retrieve the NDS
-nested = directors_database
+directors_database
 
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
@@ -11,7 +11,7 @@ end
 
 def print_first_directors_movie_titles
   i = 0
-  while i < nested[0][:movies].length do
-    print nested[0][:movies][i][:title]
+  while i < directors_database[0][:movies].length do
+    print directors_database[0][:movies][i][:title]
   end
 end
